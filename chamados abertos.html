@@ -1,0 +1,110 @@
+<!DOCTYPE html> 
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Chamados</title>
+
+    <style>
+        /* Estilos básicos para a tela falsa de login */
+        .tela-login {
+            text-align: center;
+            margin-top: 100px;
+            font-family: bahnschrift, sans-serif;
+        }
+
+        .tela-login input[type="password"] {
+            padding: 8px;
+            margin: 5px;
+        }
+
+        /* O botão "Entrar" na verdade é um label disfarçado */
+       /* .botao-entrar {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            font-family: bahnschrift, sans-serif;
+            align-items: center;
+           
+        }/*
+
+        /* Oculta o checkbox que controla a mágica e o conteúdo principal inicialmente */
+        #controle-senha, .conteudo-principal {
+            display: none;
+        }
+
+        /*  Se o checkbox for marcado, oculta a tela de login e mostra o conteúdo */
+        #controle-senha:checked ~ .tela-login {
+            display: none;
+        }
+
+        #controle-senha:checked ~ .conteudo-principal {
+            display: block;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+    
+    <input type="checkbox" id="controle-senha">
+    
+    <div class="tela-login">
+        <h2>Acesso Restrito</h2>
+        <p>Digite a senha para ver os chamados:</p>
+        <input style="max-width: 200px;"
+         type="password" placeholder="Sua senha aqui...">
+        <br><br>
+        <label  for="controle-senha" class="botao">Entrar</label>
+    </div>
+    
+    <div class="conteudo-principal">
+        <header>
+            <h1>Chamados abertos</h1>
+            <h2>Lista de chamados abertos</h2>
+        </header>
+
+        <br><br>
+        
+        <section>
+            <fieldset>
+
+            <h3>Chamado 1</h3>
+            <p>Descrição do chamado 1</p>
+
+            </fieldset>
+
+            <fieldset>
+
+            <h3>Chamado 2</h3>
+            <p>Descrição do chamado 2</p>
+            
+            </fieldset>
+
+            <fieldset>
+
+            <h3>Chamado 3</h3>
+            <p>Descrição do chamado 3</p>
+            
+            </fieldset>
+
+        </section>
+    </div>
+
+    <footer>
+            
+        <nav>
+            <ul>
+                <a href="index.html"> <i> Home </i></a>
+                <br><br>        
+            </ul>
+        </nav>
+        <p>&copy; 2024 Empresa de Tecnologia. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

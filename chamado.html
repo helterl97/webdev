@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+ <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<title>Abrir chamado</title>
+	<link rel="stylesheet" href="style.css">
+
+ </head>  
+ <body>
+
+
+	<header>
+		
+		<h1>ABRIR CHAMADO</h1>
+		
+	</header>
+
+<br><br>
+
+	<p>Preencha o formulário abaixo para abrir um chamado de suporte técnico:</p>
+<br><br>
+
+	<form>
+		<fieldset>
+		<div class="container-form">	
+
+		<fieldset>
+
+		<legend>Dados do solicitante</legend>
+
+		<label for="nome">Nome:</label>
+		<input type="text" id="nome" name="nome" required><br><br>
+
+		<label for="Setor">Setor:</label>
+		<input type="Setor" id="Setor" name="Setor" required><br><br>
+
+		<label for="email">E-mail:</label>
+		<input type="email" id="email" name="email" required><br><br>
+
+
+		<label for="telefone">Telefone:</label>
+		<input type="tel" 
+       	id="telefone" 
+      	name="telefone" 
+       	placeholder="(99) 99999-9999"
+       	pattern="\(\d{2}\)\s\d{5}-\d{4}" 
+		maxlength="13"
+      	required>
+
+		<br><br>
+
+		<label for="CPF">CPF:</label>
+		<input type="text"
+		id="CPF"
+		name="CPF"
+		placeholder="999.999.999-99"
+		pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+		maxlength="14"
+		required>
+
+		<br><br>
+
+
+		</fieldset>
+
+		<fieldset>
+		
+		<legend>Dados do chamado</legend>
+
+		<label for="classe">Classe:</label>
+		<select id="classe" name="classe">
+			<option value="hardware">Hardware</option>
+			<option value="software">Software</option>
+			<option value="rede">Rede</option>
+			<option value="outros">Outros</option>
+		</select> <br> <br>
+
+		<label for="assunto">Assunto:</label>
+		<input type="text" id="assunto" name="assunto" required><br><br>
+
+		<label for="descricao">Descrição do problema:</label><br>
+		<textarea id="descricao" name="descricao" rows="4" cols="50" required></textarea><br><br>
+		
+		<input for="data" type="date" id="data" name="data"><br><br>
+
+
+		</fieldset>
+		
+		</div>
+
+		<button class="botao" type="submit" value="abrir chamado">abrir chamado</button>
+		<button class="botao" type="reset" value="limpar formulário">limpar formulário</button>
+
+		</fieldset>
+
+	</form>
+
+	<br><br>	
+
+	<footer>
+		
+	<nav>
+		<ul> 
+			<a href="index.html"> <i> Inicio </i></a>
+			<br><BR>
+			<a href="sobre.html"><i>Sobre</i></a>
+			<BR><BR>
+			Contato:
+			<a href="tel:+5511999999999">Ligar para (11) 99999-9999</a>
+		</ul>
+	</nav>
+	<p>&copy; 2024 Empresa de Tecnologia. Todos os direitos reservados.</p>
+	</footer>
+ </body>
+</html>
